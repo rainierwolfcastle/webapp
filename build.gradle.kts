@@ -13,8 +13,16 @@ repositories {
     jcenter()
 }
 
-dependencies {
-    implementation("io.vertx:vertx-web:3.7.0")
+dependencies {    
+    implementation("io.vertx:vertx-rx-java2:3.7.0")
+    implementation("io.reactivex.rxjava2:rxkotlin:2.3.0")
+
+    implementation("io.vertx:vertx-web:3.7.0")    
+    implementation("io.vertx:vertx-lang-kotlin:3.7.0")    
+    // compile("io.vertx:vertx-lang-kotlin-coroutines:3.7.0")
+    
+    implementation("io.vertx:vertx-jdbc-client:3.7.0")
+    implementation("org.postgresql:postgresql:42.2.5.jre7")
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")    
