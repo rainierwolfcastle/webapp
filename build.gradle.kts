@@ -13,16 +13,20 @@ repositories {
     jcenter()
 }
 
-dependencies {    
-    implementation("io.vertx:vertx-rx-java2:3.7.0")
-    implementation("io.reactivex.rxjava2:rxkotlin:2.3.0")
+dependencies {
+    compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.4.1")
+    compile("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.4")
 
-    implementation("io.vertx:vertx-web:3.7.0")    
-    implementation("io.vertx:vertx-lang-kotlin:3.7.0")    
-    // compile("io.vertx:vertx-lang-kotlin-coroutines:3.7.0")
+    compile("org.slf4j:slf4j-jdk14:1.7.21")
+
+    compile("org.jetbrains.exposed:exposed:0.13.7")
+
+    compile("io.vertx:vertx-web:3.7.0")
+    compile("io.vertx:vertx-lang-kotlin:3.7.0")
+    compile("io.vertx:vertx-lang-kotlin-coroutines:3.7.0")
     
-    implementation("io.vertx:vertx-jdbc-client:3.7.0")
-    implementation("org.postgresql:postgresql:42.2.5.jre7")
+    compile("io.vertx:vertx-jdbc-client:3.7.0")
+    compile("org.postgresql:postgresql:42.2.5.jre7")
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")    
